@@ -17,24 +17,21 @@ body {
 
 	align-content: auto;
 	justify-content: auto;
-
-	border-width: 1px; /* for identifying divs */
-	border-style: solid;
-	border-color: black;
 }
 
 #select {
-	text-align: center;
+	width: 800px;
+	position: relative;
+
 
 	padding: 10px;
-	margin-left: 200px;
-	margin-right: 200px;
+	margin-left: 28%;
 
 	background-color: rgba(181, 181, 181, 0.5);
 
-	border-width: 1px; /* for identifying divs */
-	border-style: solid;
-	border-color: black;
+	border-radius: 4px;
+
+	text-align: center;
 }
 
 /*-------------------------------------------------------------------------------*/
@@ -49,6 +46,7 @@ body {
     background-repeat: no-repeat;
     background-size: 600px 300px;
 
+    margin-top: 0.5%;
     margin-left: 34%;
 }
 
@@ -191,3 +189,66 @@ body {
 
 /*-----------CONTAINER 1 DONE-------------------------------*/
 /*----------------------------------------------------------*/
+
+#image-container2{
+    width: 900px;
+    height: 300px;
+    position: relative;
+    display: inline-block;
+
+    background-image: url("../media/csgo.png");
+    background-repeat: no-repeat;
+    background-size: 600px 300px;
+
+    margin-top: 1.5%;
+    margin-left: 34%;
+}
+
+#image-container2:hover {
+    opacity: 0.8;
+}
+
+/*-----------Container 2 done --------------------------------*/
+/*------------------------------------------------------------*/
+
+#image-container3{
+    width: 900px;
+    height: 300px;
+    position: relative;
+    display: inline-block;
+
+    background-image: url("../media/tf2.jpg");
+    background-repeat: no-repeat;
+    background-size: 600px 300px;
+
+    margin-top: 1.5%;
+    margin-left: 34%;
+}
+
+#image-container3:hover {
+    opacity: 0.8;
+}
+
+/*------------------container 3 done-----------------------------*/
+/*---------------------------------------------------------------*/
+
+#image-container4{
+    width: 900px;
+    height: 300px;
+    position: relative;
+    display: inline-block;
+
+    background-image: url("../media/golf.jpg");
+    background-repeat: no-repeat;
+    background-size: 600px 300px;
+
+    margin-top: 1.5%;
+    margin-left: 34%;
+}
+
+#image-container4:hover {
+    opacity: 0.8;
+}
+
+/*------------------container 4 done-----------------------------*/
+/*---------------------------------------------------------------*/
