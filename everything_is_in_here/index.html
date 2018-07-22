@@ -3,27 +3,43 @@
 <head>
 	<title>game-signup</title>
 	<link rel="stylesheet" type="text/css" href="CSS/theme.css">
+    <script src="sidemenuanims.js"></script>
 </head>
 <body>
 	<div id="main-container">
 		<h1 id="select">SELECT A GAME</h1>
 		<h3 id="select">time now: 00:00</h3>
 			<div id="image-container1">
-				<img src="media/tf2.jpg" id="game1" height="300" width="600">
-			</div>
-			<div id="image-container2">
-				<img src="media/csgo.png" id="game1" height="300" width="600">
-			</div>
-			<div id="image-container3">
-				<img src="media/golf.jpg" id="game1" height="300" width="600">
-			</div>
-			<div id="image-container4">
-				<img src="media/nidhogg.jpg" id="game1" height="300" width="600">
-			</div>
-			<div id="image-container5">
-				<img src="media/nidhogg.jpg" id="game1" height="300" width="600">
-				<p id="text-over">HELLO</p>
-			</div>
+                <span id="table">
+                    <table id="text-over">
+                        <tr>
+                            <td>Game:</td>
+                            <td>Nidhogg</td>
+                        </tr>
+                        <tr>
+                            <td>Game mode:</td>
+                            <td>1 vs 1</td>
+                        </tr>
+                        <tr>
+                            <td>Start time:</td>
+                            <td>21:00</td>
+                        </tr>
+                        <tr>
+                            <td>Signup deadline:</td>
+                            <td>20:30</td>
+                        </tr>
+                    </table>
+                </span>
+                <span class="sidemenu" id="sidemenuid">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <p>enter your username below</p>
+                    <input type="text" name="user-name" placeholder="Your username" id="username-field">
+                    <input type="submit" value="submit" id="submit-btn">
+                </span>
+                <div id="button-container">
+                    <button class="signup-btn" onclick="openNav()"><span>Sign Up</span></button>
+                </div>
+		    </div>    
 	</div>
 </body>
 </html>
