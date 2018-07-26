@@ -36,3 +36,27 @@ body {
 }
 
 /*------------------------------------------------------------------------------*/
+
+#game-1-table {
+	width: 400px;
+	height: auto;
+	overflow-x: show;
+
+	position: relative;
+	margin-top: 3%;
+	margin-left: 40%;
+	padding: 8px;
+
+	background-color: rgba(181, 181, 181, 0.5);
+}
+
+#game-1-table-details{
+	margin-left: 20%;
+	padding: 8px;
+	text-align: center;
+	background-color: rgba(181, 181, 181, 0.7); 
+}
+
+#game-1-table-usernames {
+	padding-top: 2%;
+}
