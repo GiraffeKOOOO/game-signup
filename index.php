@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>game-signup</title>
-	<link rel="stylesheet" type="text/css" href="CSS/theme.css">
+	<link rel="stylesheet" type="text/css" href="css/theme.css">
     <script src="sidemenuanims.js"></script>
 </head>
 <body>
@@ -135,7 +135,7 @@
                 <div id="button-container">
                     <button class="signup-btn" onclick="openNav4()"><span>Sign Up</span></button>
                 </div>
-            </div> 
+            </div>
 	</div>
 </body>
 </html>

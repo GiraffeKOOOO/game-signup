@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>admin-view</title>
-	<link rel="stylesheet" type="text/css" href="CSS/admin-view.css">
+	<link rel="stylesheet" type="text/css" href="css/admin-view.css">
 </head>
 <body>
 	<div id="main-container">

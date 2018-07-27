@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>admin-login</title>
-	<link rel="stylesheet" type="text/css" href="CSS/admin-login.css">
+	<link rel="stylesheet" type="text/css" href="css/admin-login.css">
 </head>
 <body>
 	<div id="main-container">
