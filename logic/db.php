@@ -12,3 +12,4 @@ if($conn->connect_error){
 	die('DB connection failed: '. $conn->connect_error);
 }
 // db is not being reached
+?>
