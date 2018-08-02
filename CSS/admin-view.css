@@ -1,0 +1,62 @@
+body {
+	width: 1920px;
+	height: auto;
+	overflow-x: hidden;
+
+	background: #00F260;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+	font-family: Arial;
+}
+
+#main-container {
+	width: 1880px;
+	height: auto;
+	position: relative;
+
+	align-content: auto;
+	justify-content: auto;
+}
+
+#signup-text {
+	width: 800px;
+	position: relative;
+
+
+	padding: 10px;
+	margin-left: 28%;
+
+	background-color: rgba(181, 181, 181, 0.5);
+
+	border-radius: 4px;
+
+	text-align: center;
+}
+
+/*------------------------------------------------------------------------------*/
+
+#game-1-table {
+	width: 400px;
+	height: auto;
+	overflow-x: show;
+
+	position: relative;
+	margin-top: 3%;
+	margin-left: 40%;
+	padding: 8px;
+
+	background-color: rgba(181, 181, 181, 0.5);
+}
+
+#game-1-table-details{
+	margin-left: 20%;
+	padding: 8px;
+	text-align: center;
+	background-color: rgba(181, 181, 181, 0.7); 
+}
+
+#game-1-table-usernames {
+	padding-top: 2%;
+}
