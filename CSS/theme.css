@@ -1,0 +1,254 @@
+body {
+	width: 1920px;
+	height: auto;
+	overflow-x: hidden;
+
+	background: #3494E6;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #EC6EAD, #3494E6);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	font-family: Arial;
+}
+
+#main-container {
+	width: 1880px;
+	height: auto;
+	position: relative;
+
+	align-content: auto;
+	justify-content: auto;
+}
+
+#select {
+	width: 800px;
+	position: relative;
+
+
+	padding: 10px;
+	margin-left: 28%;
+
+	background-color: rgba(181, 181, 181, 0.5);
+
+	border-radius: 4px;
+
+	text-align: center;
+}
+
+/*-------------------------------------------------------------------------------*/
+
+#image-container1{
+    width: 900px;
+    height: 300px;
+    position: relative;
+    display: inline-block;
+
+    background-image: url("../media/nidhogg.jpg");
+    background-repeat: no-repeat;
+    background-size: 600px 300px;
+
+    margin-top: 0.5%;
+    margin-left: 34%;
+}
+
+#image-container1:hover {
+    opacity: 0.8;
+}
+
+#text-over {
+    width: 600px;
+    height: 230px;
+    position: relative;
+
+    text-align: center;
+    font-family: Verdana;
+
+    opacity: 0;
+    color: white;
+    border-collapse: collapse;
+}
+
+#text-over:hover{
+    opacity: 1;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+#text-over td {
+    border-width: 1px; /* for identifying divs */
+    border-style: solid;
+    border-color: white;
+
+    background-color: rgba(206, 206, 206, 0.65);
+}
+
+/*----------------------------------------------------------*/
+
+#button-container {
+	width: 600px;
+	height: 70px;
+	position: relative;
+	display: block;
+
+	text-align: center;
+}
+
+#sign-up-button {
+	border: none;
+	padding: 8px 20px;
+	background-color: #4CAF50;
+	border-radius: 6px;
+
+	font-size: 17px;
+	color: white;
+}
+
+/*----------------------------------------------------------*/
+
+.sidemenu {
+    height: 100px;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    left: 600px;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidemenu a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+}
+
+.sidemenu .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.sidemenu p {
+    color: white;
+}
+
+#username-field {
+    margin-left: 20px;
+}
+
+/*----------------------------------------------------------------------*/
+
+.signup-btn {
+    width: 140px;
+    padding: 8px 20px;
+
+    background-color: #4CAF50;
+    color: #FFFFFF;
+
+    border-radius: 4px;
+    border: none;
+  
+    text-align: center;
+    font-size: 17px;
+  
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.signup-btn span {
+    display: inline-block;
+    position: relative; 
+
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.signup-btn span:after {
+    top: 0;
+    right: -20px;
+
+    position: absolute;
+
+    opacity: 0;
+    transition: 0.5s;
+    content: '\00bb';
+}
+
+.signup-btn:hover span {
+    padding-right: 25px;
+}
+
+.signup-btn:hover span:after {
+    right: 0;
+    opacity: 1;
+}
+
+/*-----------CONTAINER 1 DONE-------------------------------*/
+/*----------------------------------------------------------*/
+
+#image-container2{
+    width: 900px;
+    height: 300px;
+    position: relative;
+    display: inline-block;
+
+    background-image: url("../media/csgo.png");
+    background-repeat: no-repeat;
+    background-size: 600px 300px;
+
+    margin-top: 1.5%;
+    margin-left: 34%;
+}
+
+#image-container2:hover {
+    opacity: 0.8;
+}
+
+/*-----------Container 2 done --------------------------------*/
+/*------------------------------------------------------------*/
+
+#image-container3{
+    width: 900px;
+    height: 300px;
+    position: relative;
+    display: inline-block;
+
+    background-image: url("../media/tf2.jpg");
+    background-repeat: no-repeat;
+    background-size: 600px 300px;
+
+    margin-top: 1.5%;
+    margin-left: 34%;
+}
+
+#image-container3:hover {
+    opacity: 0.8;
+}
+
+/*------------------container 3 done-----------------------------*/
+/*---------------------------------------------------------------*/
+
+#image-container4{
+    width: 900px;
+    height: 300px;
+    position: relative;
+    display: inline-block;
+
+    background-image: url("../media/golf.jpg");
+    background-repeat: no-repeat;
+    background-size: 600px 300px;
+
+    margin-top: 1.5%;
+    margin-left: 34%;
+}
+
+#image-container4:hover {
+    opacity: 0.8;
+}
+
+/*------------------container 4 done-----------------------------*/
+/*---------------------------------------------------------------*/

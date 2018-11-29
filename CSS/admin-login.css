@@ -1,0 +1,120 @@
+body {
+	width: 1920px;
+	height: auto;
+	overflow-x: hidden;
+
+	background: #1D2B64;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #F8CDDA, #1D2B64);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #F8CDDA, #1D2B64); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	font-family: Arial;
+}
+
+#main-container {
+	width: 1880px;
+	height: auto;
+	position: relative;
+
+	align-content: auto;
+	justify-content: auto;
+}
+
+#login-text {
+	width: 800px;
+	position: relative;
+
+
+	padding: 10px;
+	margin-left: 28%;
+
+	background-color: rgba(181, 181, 181, 0.4);
+
+	border-radius: 4px;
+
+	text-align: center;
+}
+
+/*------------------------------------------------------------------------------*/
+
+
+#login-container {
+	width: 500px;
+	position: relative;
+
+	padding: 10px;
+	margin-left: 36%;
+	margin-top: 70px;
+
+	align-content: center;
+	justify-content: center;
+	text-align: center;
+
+	background-color: rgba(181, 181, 181, 0.4);
+	border-radius: 4px;
+}
+
+#login-container [type=text],[type=password]{
+	width: 50%;
+
+	position: relative;
+	display: block;
+
+    padding: 12px 20px;
+    margin: 10px 0;
+    margin-top: 10px;
+    margin-left: 120px;
+
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+	font-family: Arial;
+	text-align: center;
+}
+
+/*--------------------------------------------------------------------*/
+
+.login-btn {
+    width: 140px;
+    padding: 8px 20px;
+
+    background-color: #4CAF50;
+    color: #FFFFFF;
+
+    border-radius: 4px;
+    border: none;
+  
+    text-align: center;
+    font-size: 17px;
+  
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.login-btn span {
+    display: inline-block;
+    position: relative; 
+
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.login-btn span:after {
+    top: 0;
+    right: -20px;
+
+    position: absolute;
+
+    opacity: 0;
+    transition: 0.5s;
+    content: '\00bb';
+}
+
+.login-btn:hover span {
+    padding-right: 25px;
+}
+
+.login-btn:hover span:after {
+    right: 0;
+    opacity: 1;
+}
