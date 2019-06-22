@@ -15,13 +15,16 @@
 
             function display_ct() {
                 var x = new Date()
-                var x1= "TIME IS: " + x.getHours( )+ ":" +  x.getMinutes() + ":" +  x.getSeconds();
+                var x1= "TIME IS: " + x.getHours( )+ ":" +  x.getMinutes();
                 document.getElementById('ct').innerHTML = x1;
                 display_c();
             }
         </script>
 </head>
 <body onload=display_ct();>
+    <?php
+
+    ?>
 	<div id="main-container">
 
 		<h1 id="select">SELECT A GAME</h1>
@@ -35,7 +38,7 @@
         <div class="modal-content">
             <span class="close">&times;</span>
             <p>ENTER YOUR NAME</p>
-            <form>
+            <form action="scripts/getUserName.php" method="post">
                 <input type="text" name="userName" id="userName">
                 <button type="submit">SUBMIT</button>
             </form>
@@ -45,12 +48,20 @@
 
         <div class="div_with_spans" id="select">
              <!-- Trigger/Open The Modal -->
-            <?php 
-            $userName = "YOUR NAME";
-            echo "
-            <span class='span_centered'> $userName <span class='span_next'><button id='myBtn'><i class='fas fa-pencil-alt'></i></button></span></span>
-            ";
-            ?>
+            <span class='span_centered'>
+
+                <?php
+                session_start();
+                $cookie_name = $_COOKIE[$cookie_name];
+
+                if(isset($_COOKIE[$cookie_name])){
+                    echo $cookie_name;
+                } else {
+                     echo 'name not set';
+                }
+                ?>
+
+                <span class='span_next'><button id='myBtn'><i class='fas fa-pencil-alt'></i></button></span></span>
         </div>
 
         <script>
