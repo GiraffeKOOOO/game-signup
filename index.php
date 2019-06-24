@@ -119,101 +119,71 @@
                 </div>
 		    </div>
 
-            <div id="image-container2">
-                <span id="table">
-                    <table id="text-over">
-                        <tr>
-                            <td>Game:</td>
-                            <td>Counter-Strike: Global Offensive</td>
-                        </tr>
-                        <tr>
-                            <td>Game mode:</td>
-                            <td>Gun Game</td>
-                        </tr>
-                        <tr>
-                            <td>Start time:</td>
-                            <td>22:00</td>
-                        </tr>
-                        <tr>
-                            <td>Signup deadline:</td>
-                            <td>21:30</td>
-                        </tr>
-                    </table>
-                </span>
-                <span class="sidemenu" id="sidemenuid2">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
-                    <p>enter your username below</p>
-                    <input type="text" name="user-name" placeholder="Your username" id="username-field">
-                    <input type="submit" value="submit" id="submit-btn">
-                </span>
-                <div id="button-container">
-                    <button class="signup-btn" onclick="openNav2()"><span>Sign Up</span></button>
-                </div>
-            </div>
 
-            <div id="image-container3">
-                <span id="table">
-                    <table id="text-over">
-                        <tr>
-                            <td>Game:</td>
-                            <td>Team Fortress 2</td>
-                        </tr>
-                        <tr>
-                            <td>Game mode:</td>
-                            <td>Capture Point</td>
-                        </tr>
-                        <tr>
-                            <td>Start time:</td>
-                            <td>14:00</td>
-                        </tr>
-                        <tr>
-                            <td>Signup deadline:</td>
-                            <td>13:40</td>
-                        </tr>
-                    </table>
-                </span>
-                <span class="sidemenu" id="sidemenuid3">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav3()">&times;</a>
-                    <p>enter your username below</p>
-                    <input type="text" name="user-name" placeholder="Your username" id="username-field">
-                    <input type="submit" value="submit" id="submit-btn">
-                </span>
-                <div id="button-container">
-                    <button class="signup-btn" onclick="openNav3()"><span>Sign Up</span></button>
-                </div>
-            </div>
 
-            <div id="image-container4">
-                <span id="table">
-                    <table id="text-over">
+        <?php
+
+        include 'scripts/db.php';
+
+        $query_schedule = "SELECT * FROM schedule";
+        $query_schedule_result = mysqli_query($conn, $query_schedule);
+        $divCounter = mysqli_num_rows($query_schedule_result);
+
+
+        $game_id = array();
+        $game_name = array();
+        $game_mode = array();
+        $game_start_time = array();
+        $game_deadline = array();
+        $game_background_string = array();
+
+        while ($row = mysqli_fetch_array($query_schedule_result)){
+            $game_id[] = $row['game_id'];
+            $game_name[] = $row['game_name'];
+            $game_mode[] = $row['game_mode'];
+            $game_start_time[] = $row['start_time'];
+            $game_deadline[] = $row['deadline'];
+            $game_background_string[] = $row['background_string'];
+        }
+
+        for($i=0; $i < $divCounter; $i++){
+
+            echo "<div class='image-container'>
+                <span id='table'>
+                    <table class='text-over'>
                         <tr>
                             <td>Game:</td>
-                            <td>Golf With Your Friends</td>
+                            <td>$game_name[$i]</td>
                         </tr>
                         <tr>
                             <td>Game mode:</td>
-                            <td>Free For All</td>
+                            <td>$game_mode[$i]</td>
                         </tr>
                         <tr>
                             <td>Start time:</td>
-                            <td>18:00</td>
+                            <td>21:00</td>
                         </tr>
                         <tr>
                             <td>Signup deadline:</td>
-                            <td>17:50</td>
+                            <td>20:30</td>
                         </tr>
                     </table>
                 </span>
-                <span class="sidemenu" id="sidemenuid4">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav4()">&times;</a>
+                <span class='sidemenu' id='sidemenuid$i'>
+                    <a href='javascript:void(0)' class='closebtn' onclick='closeNav1()'>&times;</a>
                     <p>enter your username below</p>
-                    <input type="text" name="user-name" placeholder="Your username" id="username-field">
-                    <input type="submit" value="submit" id="submit-btn">
+                    <input type='text' name='user-name' placeholder='Your username' id='username-field'>
+                    <input type='submit' value='submit' id='submit-btn'>
                 </span>
-                <div id="button-container">
-                    <button class="signup-btn" onclick="openNav4()"><span>Sign Up</span></button>
+                <div id='button-container'>
+                        <button class='signup-btn' onclick='openNav$i()'><span>Sign Up</span></button>
                 </div>
-            </div>
+            </div>";
+
+        }
+
+        ?>
+
 
 	</div>
 </body>

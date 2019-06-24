@@ -269,68 +269,50 @@ body {
     opacity: 1;
 }
 
-/*-----------CONTAINER 1 DONE-------------------------------*/
+/*-----------CONTAINER class DONE-------------------------------*/
 /*----------------------------------------------------------*/
 
-#image-container2{
+.image-container{
     width: 900px;
     height: 300px;
     position: relative;
     display: inline-block;
 
-    background-image: url("../media/csgo.png");
+    background-image: url("../media/nidhogg.jpg");
     background-repeat: no-repeat;
     background-size: 600px 300px;
 
-    margin-top: 1.5%;
+    margin-top: 0.5%;
     margin-left: 34%;
 }
 
-#image-container2:hover {
+.image-container1:hover {
     opacity: 0.8;
 }
 
-/*-----------Container 2 done --------------------------------*/
-/*------------------------------------------------------------*/
-
-#image-container3{
-    width: 900px;
-    height: 300px;
+.text-over {
+    width: 600px;
+    height: 230px;
     position: relative;
-    display: inline-block;
 
-    background-image: url("../media/tf2.jpg");
-    background-repeat: no-repeat;
-    background-size: 600px 300px;
+    text-align: center;
+    font-family: Verdana;
 
-    margin-top: 1.5%;
-    margin-left: 34%;
+    opacity: 0;
+    color: white;
+    border-collapse: collapse;
 }
 
-#image-container3:hover {
-    opacity: 0.8;
+.text-over:hover{
+    opacity: 1;
+    transition: 0.3s;
+    font-size: 16px;
 }
 
-/*------------------container 3 done-----------------------------*/
-/*---------------------------------------------------------------*/
+.text-over td {
+    border-width: 1px; /* for identifying divs */
+    border-style: solid;
+    border-color: white;
 
-#image-container4{
-    width: 900px;
-    height: 300px;
-    position: relative;
-    display: inline-block;
-
-    background-image: url("../media/golf.jpg");
-    background-repeat: no-repeat;
-    background-size: 600px 300px;
-
-    margin-top: 1.5%;
-    margin-left: 34%;
+    background-color: rgba(206, 206, 206, 0.65);
 }
-
-#image-container4:hover {
-    opacity: 0.8;
-}
-
-/*------------------container 4 done-----------------------------*/
-/*---------------------------------------------------------------*/

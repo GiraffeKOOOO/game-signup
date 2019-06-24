@@ -971,43 +971,86 @@
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
     <table id="244" parent="3" name="game_1"/>
-    <table id="245" parent="3" name="staff"/>
-    <column id="246" parent="244" name="user_ID">
+    <table id="245" parent="3" name="schedule"/>
+    <table id="246" parent="3" name="staff"/>
+    <column id="247" parent="244" name="user_ID">
       <Position>1</Position>
       <DataType>int(40)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="247" parent="244" name="username">
+    <column id="248" parent="244" name="username">
       <Position>2</Position>
       <DataType>varchar(40)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="248" parent="244" name="PRIMARY">
+    <key id="249" parent="244" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>user_ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="249" parent="245" name="staff_id">
+    <column id="250" parent="245" name="game_id">
+      <Position>1</Position>
+      <DataType>int(5)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="251" parent="245" name="game_name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="252" parent="245" name="game_mode">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="253" parent="245" name="start_time">
+      <Position>4</Position>
+      <DataType>time(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="254" parent="245" name="deadline">
+      <Position>5</Position>
+      <DataType>time(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="255" parent="245" name="background_string">
+      <Position>6</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="256" parent="245" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>game_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="257" parent="246" name="staff_id">
       <Position>1</Position>
       <DataType>int(100)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="250" parent="245" name="staff_username">
+    <column id="258" parent="246" name="staff_username">
       <Position>2</Position>
       <DataType>varchar(60)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="251" parent="245" name="staff_password">
+    <column id="259" parent="246" name="staff_password">
       <Position>3</Position>
       <DataType>varchar(60)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="252" parent="245" name="PRIMARY">
+    <key id="260" parent="246" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>staff_id</ColNames>
       <Primary>1</Primary>
