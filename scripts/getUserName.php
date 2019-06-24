@@ -9,28 +9,9 @@
 session_start();
 
 $userName = $_POST['userName'];
-echo $userName;
 
-$cookie_name = "userName";
-$cookie_value = $userName;
+$sanitizedString = filter_var($userName, FILTER_SANITIZE_STRING);
+$_SESSION['userName'] = $sanitizedString;
 
-//setcookie($cookie_name, $cookie_value, time() + (86400 * 4), "/");
-
-/*
-if(!isset($_COOKIE[$cookie_name])) {
-    echo "cookie is not set";
-} else {
-    echo "Value is: " . $_COOKIE[$cookie_name];
-}
-*/
-
-//header("Location: ../index.php");
-//unset($_COOKIE[$cookie_name]);
-
-setcookie($cookie_name, "", time() - 3600, "/");
-
-if(!isset($_COOKIE[$cookie_name])) {
-    echo "cookie is not set";
-} else {
-    echo "Value is: " . $_COOKIE[$cookie_name];
-}
+header("Location: ../index.php");
+die();

@@ -22,9 +22,6 @@
         </script>
 </head>
 <body onload=display_ct();>
-    <?php
-
-    ?>
 	<div id="main-container">
 
 		<h1 id="select">SELECT A GAME</h1>
@@ -40,7 +37,7 @@
             <p>ENTER YOUR NAME</p>
             <form action="scripts/getUserName.php" method="post">
                 <input type="text" name="userName" id="userName">
-                <button type="submit">SUBMIT</button>
+                <button type="submit" id="submitUserName">SUBMIT</button>
             </form>
         </div>
 
@@ -49,18 +46,15 @@
         <div class="div_with_spans" id="select">
              <!-- Trigger/Open The Modal -->
             <span class='span_centered'>
-
                 <?php
                 session_start();
-                $cookie_name = $_COOKIE[$cookie_name];
 
-                if(isset($_COOKIE[$cookie_name])){
-                    echo $cookie_name;
+                if(!isset($_SESSION['userName'])){
+                    echo "username not set";
                 } else {
-                     echo 'name not set';
+                    echo $_SESSION['userName'];
                 }
                 ?>
-
                 <span class='span_next'><button id='myBtn'><i class='fas fa-pencil-alt'></i></button></span></span>
         </div>
 

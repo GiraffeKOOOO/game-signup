@@ -89,7 +89,32 @@ body {
   color: black;
   text-decoration: none;
   cursor: pointer;
-} 
+}
+
+#userName{
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#submitUserName{
+    width: 11%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#submitUserName:hover {
+    background-color: #45a049;
+}
 
 /*-------------------------------------------------------------------------------*/
 
