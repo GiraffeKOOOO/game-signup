@@ -85,41 +85,6 @@
                 }
             }
         </script>
-        
-
-			<div id="image-container1">
-                <span id="table">
-                    <table id="text-over">
-                        <tr>
-                            <td>Game:</td>
-                            <td>Nidhogg</td>
-                        </tr>
-                        <tr>
-                            <td>Game mode:</td>
-                            <td>1 vs 1</td>
-                        </tr>
-                        <tr>
-                            <td>Start time:</td>
-                            <td>21:00</td>
-                        </tr>
-                        <tr>
-                            <td>Signup deadline:</td>
-                            <td>20:30</td>
-                        </tr>
-                    </table>
-                </span>
-                <span class="sidemenu" id="sidemenuid1">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
-                    <p>enter your username below</p>
-                    <input type="text" name="user-name" placeholder="Your username" id="username-field">
-                    <input type="submit" value="submit" id="submit-btn">
-                </span>
-                <div id="button-container">
-                    <button class="signup-btn" onclick="openNav1()"><span>Sign Up</span></button>
-                </div>
-		    </div>
-
-
 
         <?php
 
@@ -146,9 +111,11 @@
             $game_background_string[] = $row['background_string'];
         }
 
-        for($i=0; $i < $divCounter; $i++){
+        for($i = 1; $i < $divCounter; $i++){
 
-            echo "<div class='image-container'>
+            //$cssBackgroundDir = "../media/" . $game_background_string[$i];
+
+            echo "<div class='image-container' style='background-image: url(media/$game_background_string[$i])''>
                 <span id='table'>
                     <table class='text-over'>
                         <tr>
@@ -170,7 +137,7 @@
                     </table>
                 </span>
                 <span class='sidemenu' id='sidemenuid$i'>
-                    <a href='javascript:void(0)' class='closebtn' onclick='closeNav1()'>&times;</a>
+                    <a href='javascript:void(0)' class='closebtn' onclick='closeNav$i()'>&times;</a>
                     <p>enter your username below</p>
                     <input type='text' name='user-name' placeholder='Your username' id='username-field'>
                     <input type='submit' value='submit' id='submit-btn'>
